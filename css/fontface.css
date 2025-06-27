@@ -1,0 +1,49 @@
+/*
+   Fontface Styles
+   Filename: fontface.css
+
+
+*/
+
+/* PlayFair Display */
+
+@font-face{
+    font-family: Playfair Display;
+    src: url(../resources/PlayfairDisplay-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: Playfair Display;
+    src: url(../resources/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+    font-weight: italic;
+}
+
+/* Montserrat */
+
+@font-face{
+    font-family: Montserrat;
+    src: url(../resources/Montserrat-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: Montserrat;
+    src: url(../resources/Montserrat-Italic-VariableFont_wght.ttf);
+    font-weight: italic;
+}
+
+/* Lora */
+
+@font-face{
+    font-family: Lora;
+    src: url(../resources/Lora-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: Lora;
+    src: url(../resources/Lora-Italic-VariableFont_wght.ttf);
+    font-weight: italic;
+}
+
+/* Frank Rhul Libre */
+
+@font-face{
+    font-family: Frank Ruhl Libre;
+    src: url(../resources/FrankRuhlLibre-VariableFont_wght.ttf);
+}

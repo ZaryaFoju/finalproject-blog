@@ -1,0 +1,592 @@
+/*
+   Inkwell Chronicles Styles
+   Filename: fojuzarya.css
+
+
+*/
+@charset "UTF-8";
+
+@import "fontface.css";
+
+
+
+
+/* HTML Styles Section */
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: Frank Ruhl Libre, Lora, Arial, sans-serif;
+  }
+
+/*Body Styles Section */
+body {
+    background-color: white;
+    margin: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+body.newsletter{
+    background-color: #8C93A8
+}
+
+div.page-wrapper{
+    padding-bottom: 1em;
+}
+
+/* Nav Styles Section*/
+
+
+
+.selectionnav{
+    list-style-type: none;
+    justify-content: space-evenly;
+    display: flex;
+}
+.dropdown{
+    display: none;
+    height: 0;
+    overflow: hidden;
+}
+
+.dropdown .selectionnav{
+        list-style-type: none;
+        align-items: right;
+        flex-direction: column;
+        background-color: #3d2a43;
+}
+
+.dropdown.open{
+    height: auto;
+}
+
+.dropdown .selectionnav li{
+    border-bottom: 1px double black;
+}
+
+img#navicon{
+    display: block;
+    width: 50px;
+    height: auto;
+    padding-top: 5px;
+}
+
+
+.selectionnav li a {
+    display: block;
+    padding: 0.7em;
+}
+
+.selectionnav li{
+    margin-right: 10px;
+}
+
+a#mobilenav img {
+    width: 30px;
+    height: auto;
+    display: none;
+}
+
+ul.selectionnav > li a{
+    font-family: Frank Ruhl Libre, Lora, Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+nav.mainlinks{
+    background-color: #62466B;
+    height: 2.5em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul.selectionnav li a:visited {
+	color: rgb(206, 206, 206);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul.selectionnav li a:hover {
+	color: #ffebcd;
+    background: #4f3857;
+    transition: 0.5s;
+}
+
+
+ul.selectionnav li a:active {
+	color: #ffebcd;
+}
+
+
+
+/* About Us Section Styles */
+
+#mainabout{
+    display: flex;
+}
+
+section.aboutexplain{
+    margin: 1em;
+}
+
+section.aboutexplain header{
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #420039;
+    font-family: Playfair Display, Helvetica, sans-serif;
+}
+
+section.aboutexplain p{
+    font-size: 1.5em;
+    font-family: Lora, Frank Ruhl Libre, Arial, Verdana, sans-serif;
+}
+
+section.aboutexplain p strong{
+    color: #8C93A8;
+    font-weight: italic;
+}
+
+header.aboutmesub{
+    padding-bottom: 0.5em;
+}
+
+img#picture{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 8px;
+}
+
+.connect a.btn{
+    display: block;
+    text-align: center;
+    width: 10%;
+    margin-right: auto; 
+    margin-left: auto;
+}
+/*Aside Section Styles */
+
+aside button{
+    position: relative;
+    left: 50%;
+}
+
+
+/*Footer Styles Section */
+
+
+footer{
+    width: 100%;
+    height: 1.5em;
+    margin-top: 100%;
+    background-color: #62466B;
+    color: white;
+    border: 5px solid #3d2a43;
+}
+
+
+
+
+
+
+
+/*Home Page Styles */
+
+div.imagecontainer{
+    width: 100%;
+    height: 300px;
+    background-image: url("../images/backgroundhome.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+h1.front-page{
+    font-size: 3.5em;
+    font-family: PlayFair Display, Helvetica, sans-serif;
+    font-weight: italic;
+    margin: 20px;
+    text-align: center;
+}
+
+div.sideimagecontainer{
+    width: 100%;
+    height: 300px;
+    background-image: url("../images/typerwriter.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+div.main-text, nav.otherlinks{
+    width: 100%;
+    margin: 20px;
+    background-color: #E6E7EB;
+
+}
+
+nav.otherlinks ul{
+    padding: 10px;
+}
+
+nav.otherlinks ul li{
+   font-family: Lora, Arial, sans-serif;
+   font-size: 1.5em;
+   padding-top: 20px;
+   color: #420039;
+   font-weight: bold;
+}
+
+nav.otherlinks ul h1{
+    font-family: Playfair Display, Helvetica, Arial, sans-serif;
+    font-size: 2.5em;
+    padding-top: 20px;
+    color: #3d2a43;
+    font-weight: italic;
+ }
+
+ div.main-text h1{
+    font-family: Playfair Display, Helvetica, Arial, sans-serif;
+    font-size: 2.5em;
+    padding-top: 20px;
+    color: #3d2a43;
+    font-weight: italic;
+    text-align: center;
+ }
+
+ div.main-text p{
+    font-family: Lora, Arial, sans-serif;
+    font-size: 1.5em;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #000000;
+    text-align: center;
+ }
+
+article.maincontent-home{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+/* Header Styles Section */
+
+h1{
+    font-family: PlayFair Display, Helvetica, sans-serif;
+    color: #420039;
+}
+
+/* Stories and Essays Section */
+
+body.stories, body.essays{
+    background-color: #E6E7EB;
+}
+
+.content-search{
+    display: flex;
+}
+article{
+    width: 90%;
+    margin: 30px auto 30px;
+}
+
+article.maincontent{
+    width: 70%;
+    margin: 20px;
+    float: left;
+}
+
+div.post{
+    width: 95%;
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 5px;
+    display: flex;
+    padding-top: 0px;
+    position: relative;
+}
+
+.postimg{
+    width: 50%;
+    float: left;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-right: 10px;
+}
+
+h1.stories-title, h1.essays-title, h2.section-title{
+    font-family: Playfair Display;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 1.5em;
+}
+ p.author, p.topic, p.date{
+    font-family: Lora, Arial, sans-serif;
+    padding-right: 5px;
+    font-size: 0.80em;
+ }
+
+ .post-preview h1{
+    font-family: Montserrat, Helvetica, Lora, sans-serif;
+    font-size: 3em;
+    padding-bottom: 5px;
+ }
+
+ .post-preview p.preview-text{
+    padding-top: 18%;
+ }
+
+ .post-preview p.read{
+    padding-top: -50px;
+
+ }
+
+.story-data{
+    display: flex;
+}
+ .btn{
+    padding: .5rem 1rem;
+    background: #B5C2B7;
+    color: black;
+    border: 1px solid transparent;
+    border-radius: 5px;
+ }
+ .btn:hover{
+    background: #9ea9a0;
+    transition: 0.5s;
+ }
+
+ .post-preview p, .post-preview a.read{
+    font-family: Frank Ruhl Libre, Lora, Arial, sans-serif;
+    font-size: 1em;
+ }
+
+ .post-preview p.preview-text{
+    color: #62466B;
+    font-size: 1.5em;
+ }
+
+ aside.sidebar{
+    margin: 20% auto 5%;
+    background-color: white;
+    width: 25%;
+    height: fit-content;
+ }
+
+ aside.sidebar .sidebar-content{
+    margin: 20px;
+ }
+
+ .topic-list{
+    list-style-type: none;
+
+ }
+
+ .topic-list li button{
+    background: none;
+    border: none;
+    color:#4f3857;
+    padding-top: 10%;
+    font-family: Montserrat, Lora, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.75em;
+    margin-left: -45%;
+ }
+
+ .topic-list li button:hover{
+    color:#3d2a43;
+    font-size: 1.55em;
+    transition: 0.5s;
+ }
+
+ /* Blog Post Styles */
+
+ article.maincontent.single{
+    background: white;
+    padding: 20px 40px;
+    height: fit-content;
+ }
+
+ article.maincontent.single .post-title{
+    text-align: center;
+ }
+ 
+ article.maincontent.single p{
+    font-family: Frank Ruhl Libre, Lora, Arial, sans-serif;
+ }
+
+ aside.sidebar.single{
+    margin-top: 20px;
+ }
+ aside.sidebar.single > div.sectiontopics{
+    margin: 10px;
+ }
+
+ h1.post-title{
+    font-family: Montserrat, Lora, Arial, sans-serif;
+    font-size: 2em;
+    padding-left: 5px;
+    font-weight: bold;
+ }
+
+ article.maincontent.single p{
+    font-size: 1.2em;
+    padding-top: 20px;
+ }
+
+
+
+ img.postimg.single{
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    max-height: 50px;
+    width: auto;
+ }
+
+ .sidebar.single a.title{
+    font-family: Lora, Arial, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: #3d2a43;
+ }
+
+ /* Essay Spacing Styles */
+
+ p.sicklewrite{
+    line-height: 2em;
+ }
+
+ p.essaywrite{
+    line-height: 1.5;
+ }
+
+/*Newsletter Styles */
+
+.contactinfo, .webform{
+    background-color: #3d2a43;
+    margin-top: 20px;
+    padding: 10px;
+    border: black double 5px;
+    width: 90%;
+}
+
+div.contactinfo{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.main-newsletter{
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: #8C93A8;
+    font-family: 'Frank Ruhl Libre', Arial, sans-serif;
+    
+}
+
+textarea{
+    height: 200px;
+    width: 97%;
+    margin-top: 10px;
+}
+
+form{
+    padding: 10px;
+}
+
+h1.title{
+    font-family: Playfair Display, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 3.5em;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+label[for="phoneBox"], label[for="emailBox"], label[for="nameBox"]{
+    color: red;
+    padding-right: 15px;
+}
+
+#nameBox, #emailBox, #phoneBox{
+    width: 30%;
+    height: 15px;
+}
+
+img.icons{
+    height: 20vh;
+}
+
+.contactinfo.frame, .webform.frame{
+    width: 98%;
+}
+
+img.icons-social{
+    height: 300px;
+    padding-left: 20px;
+}
+
+input:focus, textarea:focus{
+    background-color: rgb(220, 255, 220);
+}
+
+input#phoneBox:focus:valid, input#emailBox:focus:valid, input#nameBox:focus:valid{
+    background-color: rgb(85, 156, 85);
+}
+input#phoneBox:focus:invalid, input#emailBox:focus:invalid, input#nameBox:focus:invalid{
+    background-color: rgb(234, 110, 110);
+}
+
+button img.darkimg{
+    transition: 2.5s;
+    width: 30px;
+    height: auto;
+
+}
+
+button img.darkimg:hover{
+    transition: 2.5s;
+    width: 20px;
+}
+
+button.togglemode{
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+address a:hover{
+    transition: 2.5s;
+    color:#3d4049;
+    font-size: 0.9em;
+}
+
+/* Audio Styles */
+
+audio{
+    width: 95%;
+    margin-top: 10px;
+}
+
+/* Javascript Addons */
+

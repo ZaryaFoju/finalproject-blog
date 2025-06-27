@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!--
+    Inkwell Chronicles - Newsletter
+    Author: Zarya Foju
+    Date:   01/25/2024
+
+    Filename: newsletter.html
+-->
+<meta charset="utf-8" content="width=device-width, initial-scale=1" name="viewport" />
+<title>Inkwell Chronicles - Newsletter</title>
+<link href="../css/fojuzarya.css" rel="stylesheet" />
+<link href="../css/mobilestyles.css" rel="stylesheet" />
+<link href="../css/reset.css" rel="stylesheet" />
+<script src="../resources/fojuzarya.js" defer></script>
+</head>
+
+<body class="newsletter">
+<div class="page-wrapper">
+<header>
+        <nav class="mainlinks">
+          <img id="navicon" src="../images/logonavi.png" alt="navicon" />
+            <ul class="selectionnav">
+                <li><a href="home.html" >Home</a></li>
+                <li><a href="aboutus.html" >About Me</a></li>
+                <li><a href="newsletter.html" >Newsletter</a></li>
+                <li><a href="essays.html" >Essays</a></li>
+                <li><a href="stories.html" >Stories</a></li>
+                <li><a href="linkreference.html" >LF</a></li>
+            </ul>
+            <a href="#" id="mobilenav"><img src="../images/navicon_mob.png" alt="" /></a>
+        </nav>
+        <div class="dropdown">
+            <ul class="selectionnav">
+              <li><a href="home.html" >Home</a></li>
+              <li><a href="aboutus.html" >About Me</a></li>
+              <li><a href="newsletter.html" >Newsletter</a></li>
+              <li><a href="essays.html" >Essays</a></li>
+              <li><a href="stories.html" >Stories</a></li>
+              <li><a href="linkreference.html" >LF</a></li>
+          </ul>
+        </div>
+</header>
+<div class="main-newsletter">
+<h1 class="title">Connect with me!</h1>
+<div class="contactinfo">
+    <div>
+        <img class="icons" src="../images/phone.png" alt="phone-icon" />
+        <p>(512) 123-3456</p>
+    </div>
+    <div>
+        <img class="icons" src="../images/email.png" alt="email-icon" />
+        <p>Contact us through email!</p>
+        <address><a href="mailto:inkwellchronicles@gmail.com">inkwellchronicles@gmail.com</a></address>
+    </div>
+    <div>
+        <a href="https://www.youtube.com/"><img class="icons" src="../images/youtube.png" alt="social-icon" /></a>
+        <p>Find our Youtube channel here!</p>
+    </div>
+</div>
+<div class="webform">
+        <form>
+            <div>
+                <label for="nameBox">Name*</label>
+                <input id="nameBox" name="userName" placeholder="First and Last Name" required />
+            </div>
+            <div>
+                <label for="emailBox">Email*</label>
+                <input id="emailBox" name="userEmail" placeholder="example@gmail.com" type="email" required />
+            </div> 
+            <div>
+                <label for="phoneBox">Phone*</label>
+                <input type="tel" id="phoneBox" name="userPhone" placeholder="nnn nnn-nnnn"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required /> 
+            </div> 
+            <div>
+                <input name="messageSelect" id="message" onclick="toggleMessgBox()" type="radio" checked />
+                <label for="message">Add a message?</label>
+                <input name="messageSelect" id="nomessage" onclick="untoggleMessgBox()" type="radio" checked />
+                <label for="nomessage">No message</label>
+            </div>
+            <textarea id="messageBox" name="messageText" placeholder="Enter the message here. . .  " autofocus tabindex="1"  disabled></textarea>
+            <input type="submit" value="Submit" id="submitbtn" />
+            <input type="reset" value="Reset Form" id="resetbtn" />
+        </form>
+    </div>
+</div>
+</div>
+<footer>Copyright &copy; 2024 Inkwell Chronicles. All rights reserved.</footer>
+</body>
+
+</html>
